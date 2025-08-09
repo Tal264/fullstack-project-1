@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <h1 style="text-align: center;"> Full Stack Project 1 - <a href="https://drive.google.com/file/d/1xUowxOOWIyMPO2sZivS2n_72qNKR6uXi/view">User Management Interface</a></h1>
+    <h2 style="text-align: center;">Created with ❤️ by Tal Binder</h2>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class="main-container">
+
+        <div class="search-wrapper">
+            <div>
+                <label for="search">Search</label> 
+                <input type="search" id="search" data-search>
+            </div>
+            <div>
+                <button id="userAddBtn">Add</button>
+            </div>
+        </div>
+
+        <!-- New flex container to align user content and form side by side -->
+        <div class="content-wrapper">
+            
+            <div class="user-card-wrapper">
+                <div class="user-card" id="usercard">
+                    <!-- User cards go here -->
+                </div>
+
+                <div class="hide" id="todosCard">
+                     <div class="form-container"></div>
+                    <!-- Selected user's todos go here -->
+                </div>
+
+                <div class="hide" id="postsCard">
+                      <div class="form-container"></div>
+                    <!-- Selected user's posts go here -->
+                </div>
+            </div>
+
+            <!-- Form will appear here, beside the user cards -->
+            <div id="formContainerWrapper"></div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
+

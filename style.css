@@ -1,0 +1,252 @@
+/* Main user container */
+.main-container {
+    max-width:400px;
+    border-radius: 20px; 
+    margin-left: 0; 
+    padding: 10px; 
+    display: block;
+  }
+
+  
+  /* Search wrapper */
+  .search-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px; /* space between label, input, and button */
+    margin: 20px;
+  }
+  
+  /* Utility class for hiding elements IN SEARCH*/
+  .hide {
+  display: none;
+}
+  /* General input styling */
+  input {
+    font-size: 1rem;
+  }
+  
+  /* Utility class for hiding elements */
+  .hidden {
+    display: none !important;
+  }
+  
+  /* Page body */
+  body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+  }
+  
+  .user-card-wrapper {
+    width: max-content;
+    display: flex;
+    gap: 20px;
+    align-items: flex-start; 
+  }
+
+  /* User list layout */
+  #usercard {
+    display: flex;
+    flex-wrap: wrap;
+    flex:1; 
+    gap: 20px;
+  }
+  
+  /* User card */
+  .user-card {
+    width: 350px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #fafafa;
+    border-radius: 10px;
+    position: relative;
+    transition: box-shadow 0.2s;
+    
+  }
+  
+  .user-card:hover {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  
+  /* Address Box */
+  .address-box {
+    display: none;
+    padding: 10px;
+    background-color: #f4f4f4;
+    margin-top: 10px;
+    border-left: 4px solid #aaa;
+    border-radius: 4px;
+  }
+  
+  /* Input Row Layout */
+  .input-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .input-row strong {
+    min-width: 80px;
+    text-align: right;
+  }
+  
+
+  
+  /*  button styling */
+  button {
+    padding: 8px 14px;
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  .user-id {
+    font-size: 0.8em;
+    color: #007BFF;
+    margin-bottom: 5px;
+    text-decoration: underline;
+  }
+
+  .mark-completed-btn,
+  .action-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 10px;
+  
+  }
+  
+  
+  /* Label showing user ID */
+  #todosCard label,
+  #postsCard label {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    display: block;
+    color: #333;
+  }
+  
+
+  /* Each todo and post item */
+  .user-todo-item,
+   .user-post-item {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 12px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    transition: background-color 0.2s;
+  }
+  
+  /* On hover */
+  .user-todo-item:hover,
+  .user-post-item:hover {
+    background-color: #f1f1f1;
+  }
+
+  
+  /* Title, body and completed info */
+.user-todos .title,
+.user-todos .completed,
+.user-posts .title,
+.user-posts .body {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+  
+  #todosCard,
+#postsCard {
+  width: 330px; 
+  background-color: transparent; 
+  border: none;
+  padding: 0;
+  display: none;
+  margin-left: 10px;
+}
+
+   
+  .todos-header,
+  .posts-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+
+  .form-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .form-buttons button {
+  background-color: #007BFF;
+  color: white;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.form-buttons button:hover {
+  background-color: #0056b3;
+}
+
+.form-buttons .cancel-btn {
+  background-color: #6c757d;
+}
+
+#cancelTodoBtn,
+#cancelPostBtn,  
+#cancelAddUserBtn {
+    background-color: #6c757d; 
+   } 
+
+  
+   #formContainerWrapper {
+  position: static;
+  top: 0;
+  left: 100%;
+  margin-left: 10px; 
+}
+
+ .formHeader label {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    display: block;
+    color: #333;
+  }
+
+  .form-container {
+  max-width: 350px;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  margin-bottom: 20px;
+  
+}
+
+.content-wrapper {
+ display: flex; 
+ align-items: flex-start; 
+ gap: 20px;
+}
+
